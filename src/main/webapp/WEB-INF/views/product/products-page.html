@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> Test list product </h2>
+<p th:each="product : ${productList}" th:text="${product.toString()} "/>
+</body>
+</html>
